@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'libreria',
-    
 ]
 
 MIDDLEWARE = [
@@ -79,9 +78,9 @@ WSGI_APPLICATION = 'AppWeb12.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'biblioteca',
+        'NAME': 'sistemasuni_biblioteca',
         'USER':'root',
-        'PASSWORD':'root',
+        'PASSWORD':'',
         'HOST':'localhost',
         'PORT':'3306'
     }
@@ -127,8 +126,8 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-MEDIA_ROOT = os.path.join(BASE_DIR,"")
-MEDIA_URL = '/imagenes/'
-
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Media files
+MEDIA_URL = '/imagenes/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "")
